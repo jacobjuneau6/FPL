@@ -1,0 +1,13 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "SOP80P1176X120-54N") (type "KiCad") (uri "${KIPRJMOD}/symbols/W9825G6KH-6/SOP80P1176X120-54N.pretty") (options "") (descr ""))
+	(lib (name "QFP50P2200X2200X160-144N") (type "KiCad") (uri "${KIPRJMOD}/symbols/LIB_LFE5U-25F-6TG144C/QFP50P2200X2200X160-144N.pretty") (options "") (descr ""))
+	(lib (name "SW_B3F-1000") (type "KiCad") (uri "${KIPRJMOD}/symbols/B3F-1000/SW_B3F-1000.pretty") (options "") (descr ""))
+	(lib (name "WL-SMSW_1204_A") (type "KiCad") (uri "${KIPRJMOD}/symbols/WL-SMSW_1204_A/WL-SMSW_1204_A.pretty") (options "") (descr ""))
+	(lib (name "XTAL_ASE-25.000MHZ-LC-T") (type "KiCad") (uri "${KIPRJMOD}/symbols/ASE-25.000MHZ-LC-T/XTAL_ASE-25.000MHZ-LC-T.pretty") (options "") (descr ""))
+	(lib (name "basic") (type "KiCad") (uri "${KIPRJMOD}/symbols/basic.pretty") (options "") (descr ""))
+	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}/symbols/ul_LD1117S25CTR/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "footprints2") (type "KiCad") (uri "${KIPRJMOD}/symbols/ul_LD1117S33CTR/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "footprints3") (type "KiCad") (uri "${KIPRJMOD}/symbols/ul_LD1117S12CTR/KiCADv6/footprints.pretty") (options "") (descr ""))
+	(lib (name "footprints4") (type "KiCad") (uri "${KIPRJMOD}/symbols/ul_RC0402FR-075K1L/KiCADv6/footprints.pretty") (options "") (descr ""))
+)

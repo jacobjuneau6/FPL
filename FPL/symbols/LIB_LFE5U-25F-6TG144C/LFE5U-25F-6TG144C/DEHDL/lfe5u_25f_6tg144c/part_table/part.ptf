@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LFE5U_25F_6TG144C'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Lattice Semiconductor", "LFE5U-25F-6TG144C" (!) = "", "QFP50P2200X2200X160-144N", "Quad Flat Packages", "842-LFE5U25F6TG144C", "https://www.mouser.co.uk/ProductDetail/Lattice/LFE5U-25F-6TG144C?qs=TuK3vfAjtkUJ2XBiIF%2F%2FCA%3D%3D", "", "", "ECP5 Field Programmable Gate Array (FPGA) IC 98 1032192 24000 144-LQFP 1.045V ~ 1.155V 0C ~ 85C (TJ)", "https://www.latticesemi.com/Products/FPGAandCPLD/ECP5", "1.6 mm"
+END_PART
+
+END.

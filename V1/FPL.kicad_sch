@@ -1,0 +1,198 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "5aeb9632-c997-48c0-9266-8b3c1600ff63")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 102.87 19.05)
+		(size 53.34 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4e5a4195-548f-4dd8-bf5d-25123ba7c2f7")
+		(property "Sheetname" "Power"
+			(at 102.87 18.3384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 102.87 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FPL"
+				(path "/5aeb9632-c997-48c0-9266-8b3c1600ff63"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 22.86)
+		(size 66.04 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7d97bc28-2df8-4757-ba5a-21ea12a902f2")
+		(property "Sheetname" "GPIO"
+			(at 179.07 22.1484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gpio.kicad_sch"
+			(at 179.07 60.2746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FPL"
+				(path "/5aeb9632-c997-48c0-9266-8b3c1600ff63"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 17.78)
+		(size 73.66 86.36)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b74801d7-722a-4a2a-8ea3-33ac8f62128e")
+		(property "Sheetname" "FPGA_RAM"
+			(at 17.78 17.0684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "FPGA.kicad_sch"
+			(at 17.78 104.7246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FPL"
+				(path "/5aeb9632-c997-48c0-9266-8b3c1600ff63"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 72.39)
+		(size 58.42 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c417f7cd-2ca1-4746-9f5c-8a4fd17793c2")
+		(property "Sheetname" "Storeage"
+			(at 102.87 71.6784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "storeage.kicad_sch"
+			(at 102.87 104.7246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "FPL"
+				(path "/5aeb9632-c997-48c0-9266-8b3c1600ff63"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,67 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\latticeplds.olb"
+      (Type "Schematic Library"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\latticeplds.olb")
+      (Select "Design Resources" ".\latticeplds.olb"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 0 0 0 200 0 456"))
+      (Tab 0))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1466 24 921"))
+      (Path
+         "C:\USERS\RSOOD\ONEDRIVE - LATTICE SEMICONDUCTOR CORP\DOCUMENTS\SYMBOL LIBRARY UPDATES\REV9P0 WORK\FPGA-SC-02005-9-0-LATTICE-ORCAD-CAPTURE-SCHEMATIC-LIBRARY-OLB\LATTICEORCADCAPTURESCHEMATICLIBRARYOLB\LATTICEPLDS.OLB")
+      (Package "LFMXO5-55T-BBG400")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1466 24 921"))
+      (Path
+         "C:\USERS\RSOOD\ONEDRIVE - LATTICE SEMICONDUCTOR CORP\DOCUMENTS\SYMBOL LIBRARY UPDATES\REV9P0 WORK\FPGA-SC-02005-9-0-LATTICE-ORCAD-CAPTURE-SCHEMATIC-LIBRARY-OLB\LATTICEORCADCAPTURESCHEMATICLIBRARYOLB\LATTICEPLDS.OLB")
+      (Package "LFMXO5-55TD-BBG400")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1466 24 921"))
+      (Path
+         "C:\USERS\RSOOD\ONEDRIVE - LATTICE SEMICONDUCTOR CORP\DOCUMENTS\SYMBOL LIBRARY UPDATES\REV9P0 WORK\FPGA-SC-02005-9-0-LATTICE-ORCAD-CAPTURE-SCHEMATIC-LIBRARY-OLB\LATTICEORCADCAPTURESCHEMATICLIBRARYOLB\LATTICEPLDS.OLB")
+      (Package "LFMXO5-55TDQ-BBG400")
+      (PartType "1"))
+    (Doc
+      (Type "COrPrmBrowserDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 5 1466 24 921"))
+      (Path
+         "C:\USERS\RSOOD\ONEDRIVE - LATTICE SEMICONDUCTOR CORP\DOCUMENTS\SYMBOL LIBRARY UPDATES\REV9P0 WORK\FPGA-SC-02005-9-0-LATTICE-ORCAD-CAPTURE-SCHEMATIC-LIBRARY-OLB\LATTICEORCADCAPTURESCHEMATICLIBRARYOLB\LATTICEPLDS.OLB")
+      (Package "LFMXO5-100T-BBG400")
+      (PartType "1")))
+  (MPSSessionName "rsood")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"))

@@ -1,0 +1,9 @@
+Manufacturer=Lattice Semiconductor
+PartNumber=LFE5U-25F-6TG144C
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=144
+Version=1.1
+Released=2025-10-15 09:27:24
+Downloaded=2026-04-04 17:46:15
+3D=Y

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LFE5U-25F-6TG144C
+D ECP5 Field Programmable Gate Array (FPGA) IC 98 1032192 24000 144-LQFP 1.045V ~ 1.155V 0C ~ 85C (TJ)
+K
+F https://www.latticesemi.com/Products/FPGAandCPLD/ECP5
+$ENDCMP
+#
+#End Doc Library
