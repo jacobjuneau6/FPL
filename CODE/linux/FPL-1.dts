@@ -1,0 +1,126 @@
+/dts-v1/;
+
+/ {
+    #address-cells = <1>;
+    #size-cells = <1>;
+    compatible = "litex,fpl_ecp5-rocket";
+    model = "litex,fpl_ecp5";
+
+    // ------------------------------------------------------------------
+    // CPU
+    // ------------------------------------------------------------------
+    cpus {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        timebase-frequency = <1000000>;
+
+        cpu0: cpu@0 {                     // <-- label added
+            device_type = "cpu";
+            compatible = "riscv";
+            riscv,isa = "rv64imafdc";
+            mmu-type = "riscv,sv39";
+            reg = <0>;
+            clock-frequency = <100000000>;
+            status = "okay";
+            interrupt-controller {
+                #interrupt-cells = <1>;
+                compatible = "riscv,cpu-intc";
+                interrupt-controller;
+            };
+        };
+    };
+
+    // ------------------------------------------------------------------
+    // Memory
+    // ------------------------------------------------------------------
+    memory@80000000 {
+        device_type = "memory";
+        reg = <0x80000000 0x04000000>;     // 64 MiB
+    };
+
+    // Reserve first 2 MiB for OpenSBI
+    reserved-memory {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges;
+
+        opensbi@80000000 {
+            reg = <0x80000000 0x200000>;
+            no-map;
+        };
+    };
+
+    // ------------------------------------------------------------------
+    // SoC peripherals
+    // ------------------------------------------------------------------
+    soc {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "simple-bus";
+        ranges;
+
+        // ----- CLINT (Core Local Interruptor) -----
+        clint@2000000 {
+            compatible = "sifive,clint0";
+            reg = <0x2000000 0x10000>;
+            interrupts-extended = <&cpu0 3>, <&cpu0 7>;   // uses cpu0 label
+        };
+
+        // ----- PLIC (Platform Level Interrupt Controller) -----
+        plic: plic@c000000 {              // <-- label added
+            compatible = "sifive,plic-1.0.0";
+            reg = <0xc000000 0x400000>;
+            interrupt-controller;
+            #address-cells = <0>;
+            #interrupt-cells = <1>;
+            riscv,ndev = <3>;
+            interrupts-extended = <&cpu0 11>;
+        };
+
+        // ----- LiteX UART -----
+        serial@12003800 {
+            compatible = "litex,uart";
+            reg = <0x12003800 0x100>;
+            interrupts = <0>;
+            interrupt-parent = <&plic>;   // uses plic label
+            status = "okay";
+        };
+
+        // ----- LiteX Ethernet -----
+        ethernet@30000000 {
+            compatible = "litex,eth";
+            reg = <0x12000800 0x100>,      // CSR region
+                  <0x30000000 0x2000>;     // RX+TX buffers (8 KiB)
+            interrupts = <2>;
+            interrupt-parent = <&plic>;
+            status = "okay";
+        };
+
+        // ----- LiteX GPIO -----
+        gpio@12001800 {
+            compatible = "litex,gpio";
+            reg = <0x12001800 0x20>;
+            gpio-controller;
+            #gpio-cells = <2>;
+            // No interrupt assigned, so no interrupt-parent
+            status = "okay";
+        };
+
+        // ----- LiteX Timer -----
+        timer@12003000 {
+            compatible = "litex,timer";
+            reg = <0x12003000 0x20>;
+            interrupts = <1>;
+            interrupt-parent = <&plic>;
+            status = "okay";
+        };
+    };
+
+    // ------------------------------------------------------------------
+    // Kernel command line
+    // ------------------------------------------------------------------
+    chosen {
+        bootargs = "console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait rw";
+        stdout-path = "/soc/serial@12003800:115200";
+    };
+};
