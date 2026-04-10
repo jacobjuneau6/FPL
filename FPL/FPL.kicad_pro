@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.45,
-          "width": 2.45
+          "drill": 1.0,
+          "height": 1.4,
+          "width": 2.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -79,10 +79,6 @@
         ],
         [
           "lib_footprint_mismatch|142508000|111170000|271cf5bd-1483-4e76-b457-bfcec934039a|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|145823022|104883022|a8b2fcfa-8e19-463e-b0ea-bc9dae9fca6c|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -138,7 +134,7 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "warning",
         "assertion_failure": "error",
         "clearance": "error",
         "connection_width": "warning",
@@ -209,7 +205,7 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.18,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
@@ -618,7 +614,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "gerbers-2/",
+      "plot": "gerbers-4/",
       "specctra_dsn": "",
       "vrml": ""
     },
